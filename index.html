@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -7,46 +7,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leonardo D'Ulivo</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 </head>
 
 <body id="myBody">
 
-  <div id="aboutMy"></div>
+  <div id="My_home"></div>
 
   <!-- NAVBAR -->
   <nav class="menu-nav">
     <div class="menu-nav--content">
 
       <ul id="menu_nav">
-        <li class="list active" data-color="#ffa801">
-          <a href="#aboutMy">
+        <li class="list" data-color="#ffa801" data-link="#aboutMy">
+          <button href="#aboutMy">
             <span class="icon"></span>
             <span class="title">Sobre mi</span>
-          </a>
+          </button>
         </li>
-        <li class="list" data-color="#f53b57">
-          <a href="#">
+        <li class="list" data-color="#f53b57" data-link="#skills">
+          <button href="#">
             <span class="icon"></span>
             <span class="title">Skills</span>
-          </a>
+          </button>
         </li>
-        <li class="list" data-color="#3c40c6">
-          <a href="#">
+        <li class="list" data-color="#3c40c6" data-link="#hobbies">
+          <button href="#">
             <span class="icon"></span>
             <span class="title">Hobbies</span>
-          </a>
+          </button>
         </li>
-        <li class="list" data-color="#05c46b">
-          <a href="#">
+        <li class="list" data-color="#05c46b" data-link="#academic">
+          <button href="#">
             <span class="icon"></span>
             <span class="title">Formación</span>
-          </a>
+          </button>
         </li>
-        <li class="list" data-color="#0fbcf9">
-          <a href="#">
+        <li class="list" data-color="#0fbcf9" data-link="#projects">
+          <button href="#">
             <span class="icon"></span>
             <span class="title">Proyectos</span>
-          </a>
+          </button>
         </li>
 
         <div class="indicator"></div>
@@ -57,9 +58,9 @@
 
   </nav>
 
-  <a href="#" class="contact-me">
+  <button href="#" class="contact-me">
     Contáctame
-  </a>
+  </button>
 
   <!-- SECTION: home -->
   <section class="home" id="home">
@@ -75,7 +76,7 @@
         <div class="title">
           <p>Leonardo D'Ulivo</p>
           <h1>Creador de páginas web</h1>
-          <h3>Formación Universitaria como <span>Técnico en Redes de Datos y Telecomunicaciones.</span> Actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
+          <h3>Soy formado como Técnico Universitario en Redes de Datos y Telecomunicaciones. Actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
         </div>
 
       </div>
@@ -85,30 +86,224 @@
   </section>
 
   <!-- SECTION: aboutme -->
+  <div class="myViewPort" id="aboutMy"></div>
   <section class="aboutme">
     <div class="perfil">
+      <svg
+        viewBox="0 -1 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="100%"
+        id="blobSvg"
+      >
+        <g
+        inkscape:label="Capa 1"
+        inkscape:groupmode="layer"
+        id="layer1"
+        transform="translate(-36.443113,-84.825338)">
+          <g
+              id="freepik--character-3--inject-2"
+              transform="matrix(-0.23340944,0,0,0.26458333,138.56282,44.610295)">
+            <path
+                d="m 378.54,253.2 c 7.33,-23.78 14.46,-39.45 7.19,-44.3 v 0 c -6.76,1.26 -9.79,4.61 -11.23,13.53 -1.51,9.35 -4.65,22.39 -6.48,29.91 a 89,89 0 0 1 -6.75,18.17 3.85,3.85 0 0 1 -2,1.75 c -2.26,0.89 -3.34,2 -5.18,3.36 -1.45,1 -2.51,1.14 -2.44,1.57 a 1.9,1.9 0 0 0 2.26,1.4 13.73,13.73 0 0 0 3.15,-1 15.71,15.71 0 0 1 -3.94,5.76 c -3.55,3 -3,5.93 2.69,6.27 2,0.12 6.77,-1.74 11.16,-9.21 a 74.47,74.47 0 0 0 3.91,-8.61 c 3.06,-7.66 6.19,-13.8 7.66,-18.6 z"
+                style="fill:#ffa8a7"
+                id="path14"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 387,208.62 c 0,0 -5.64,-0.29 -9.06,3.48 -3.42,3.77 -7.4,26.29 -7.4,26.29 0,0 3.74,5.14 13.6,3 z"
+                style="fill:#ba68c8"
+                id="path16"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 387,208.62 c 0,0 -5.64,-0.29 -9.06,3.48 -3.42,3.77 -7.4,26.29 -7.4,26.29 0,0 3.74,5.14 13.6,3 z"
+                style="opacity:0.3"
+                id="path18"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 410.54,210.42 c 0,0 5.92,0.55 5.5,11.83 l -1.31,18 v 27 c -5.57,6.31 -30.25,5.84 -38.7,-0.51 0,0 0.95,-31.93 1.52,-44.22 0.41,-8.73 2.42,-13.13 11,-14.09 l 10.55,0.46 z"
+                style="fill:#ba68c8"
+                id="path32"
+                inkscape:connector-curvature="0" />
+            <polygon
+                points="389.19,225.76 392.76,226.33 393.71,216.34 392.35,225.82 "
+                style="opacity:0.3"
+                id="polygon34" />
+            <path
+                d="m 401.61,185 a 11.52,11.52 0 0 1 -11.27,11.75 c -6.23,0 -11,-5.27 -11.28,-11.74 -0.49,-11.47 5.05,-11.75 11.28,-11.75 A 11.52,11.52 0 0 1 401.61,185 Z"
+                style="fill:#263238"
+                id="path36"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 408,190.81 c 0,0 -1.73,8.46 -2.42,9.85 a 3.66,3.66 0 0 1 -2.12,1.78 l 0.12,-5.95 z"
+                style="fill:#263238"
+                id="path38"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 405.86,178.69 c 0,0 1.24,-0.31 2.56,1.75 1.13,1.76 1.39,5.72 -0.39,10.37 l -3.25,0.39 z"
+                style="fill:#263238"
+                id="path40"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 403.8,191.2 c 0.65,0.41 1.58,-0.9 2.39,-1.78 0.81,-0.88 3.43,-2.07 4.75,0.8 1.32,2.87 -1.16,6.81 -3.23,7.49 -3.57,1.17 -4.1,-1.22 -4.1,-1.22 l -0.28,13.4 c -4.73,7.33 -15.46,7.06 -11.6,-0.35 v -4.08 a 21.79,21.79 0 0 1 -4.81,0.26 c -2.62,-0.43 -4.27,-2.58 -5.07,-5.54 -1.28,-4.75 -1.76,-8.58 -0.68,-17.93 1.2,-10.25 12.64,-10.34 18.83,-6.25 6.19,4.09 3.8,15.2 3.8,15.2 z"
+                style="fill:#ffa8a7"
+                id="path42"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 403.39,206.89 a 17.15,17.15 0 0 1 -4.63,5.81 13.08,13.08 0 0 1 -5.61,2.38 12.43,12.43 0 0 1 4,4.45 c 1.19,2.6 9.52,-4.57 9.44,-9.66 0,0 -1.3,-5.11 -3.1,-5.43 z"
+                style="fill:#263238"
+                id="path44"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 393.15,215.08 c 0,0 -2.57,-1.27 -1.42,-5.54 v -4.08 l -1.13,0.15 a 9.93,9.93 0 0 0 -2.7,4.69 c -0.26,1.17 -0.9,7.09 0.23,8.26 1.13,1.17 2.71,-3.16 5.02,-3.48 z"
+                style="fill:#263238"
+                id="path46"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 399.42,180 a 1.64,1.64 0 0 1 0.88,0.05 c 1,0.44 1.18,3.46 1.35,4.33 0.57,2.93 1.05,7.9 2.15,7.92 0.33,0 1.58,-2.15 2.39,-2.92 1.13,-1.07 -0.33,-10.73 -0.33,-10.73 a 4.71,4.71 0 0 0 -1.08,-4.89 c -2,-2.32 -5.22,-2.84 -8.13,-3 -3.43,-0.19 -6.91,0.07 -10.29,-0.68 a 27.28,27.28 0 0 0 -3.23,-0.69 0.37,0.37 0 0 0 -0.29,0 c -0.11,0.09 -0.09,0.26 -0.06,0.4 a 10.74,10.74 0 0 0 1.06,2.9 26,26 0 0 1 -5.92,-1.17 0.57,0.57 0 0 0 -0.34,0 c -0.23,0.07 -0.27,0.37 -0.25,0.61 0.13,2.42 1.28,6.08 3.25,7.5 a 11.36,11.36 0 0 0 5.86,1.85 c 5.3,0.2 8.56,-0.92 12.98,-1.48 z"
+                style="fill:#263238"
+                id="path48"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 405.86,179.2 3.95,-2.21 a 2.14,2.14 0 0 0 -3,-1 2.51,2.51 0 0 0 -0.95,3.21 z"
+                style="fill:#263238"
+                id="path50"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 391.74,205.46 c 0,0 5.85,-1.23 7.9,-2.36 a 6.92,6.92 0 0 0 2.83,-2.92 9.71,9.71 0 0 1 -1.61,3.44 c -1.49,2 -9.12,3.46 -9.12,3.46 z"
+                style="fill:#f28f8f"
+                id="path52"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 393.15,189.68 a 1.17,1.17 0 1 0 1.17,-1.28 1.21,1.21 0 0 0 -1.17,1.28 z"
+                style="fill:#263238"
+                id="path54"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 395,184.62 2.51,1.44 A 1.6,1.6 0 0 0 397,184 a 1.37,1.37 0 0 0 -2,0.62 z"
+                style="fill:#263238"
+                id="path56"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 392.27,198.12 -2.68,1 a 1.4,1.4 0 0 0 1.82,0.93 1.58,1.58 0 0 0 0.86,-1.93 z"
+                style="fill:#f28f8f"
+                id="path58"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 382.38,185.69 2.29,-1.84 a 1.35,1.35 0 0 0 -2,-0.31 1.62,1.62 0 0 0 -0.29,2.15 z"
+                style="fill:#263238"
+                id="path60"
+                inkscape:connector-curvature="0" />
+            <path
+                d="m 383.39,189.33 a 1.21,1.21 0 0 0 1.17,1.26 1.27,1.27 0 0 0 0,-2.54 1.24,1.24 0 0 0 -1.17,1.28 z"
+                style="fill:#263238"
+                id="path62"
+                inkscape:connector-curvature="0" />
+            <polygon
+                points="389.67,188.35 389.53,195.76 385.32,194.79 "
+                style="fill:#f28f8f"
+                id="polygon64" />
+            <g
+                id="g843"
+                inkscape:label="g843">
+              <path
+                  inkscape:connector-curvature="0"
+                  id="path66"
+                  style="fill:#ba68c8"
+                  d="m 422.06,195.8 c 1.69,-2.24 5.11,2.73 6.69,6.16 1.58,3.43 1.61,5.37 0.31,6.73 -1.3,1.36 -3.75,0.54 -6.2,-2.71 -2.45,-3.25 -1.77,-8.53 -0.8,-10.18 z" />
+              <path
+                  inkscape:connector-curvature="0"
+                  id="path68"
+                  style="opacity:0.5"
+                  d="m 422.06,195.8 c 1.69,-2.24 5.11,2.73 6.69,6.16 1.58,3.43 1.61,5.37 0.31,6.73 -1.3,1.36 -3.75,0.54 -6.2,-2.71 -2.45,-3.25 -1.77,-8.53 -0.8,-10.18 z" />
+              <path
+                  inkscape:connector-curvature="0"
+                  id="path70"
+                  style="fill:#ffa8a7"
+                  d="m 434,196.46 c -6,14 -14.35,21.89 -18.1,30.9 -4.91,-0.33 -8.74,-12.2 -5.08,-17.27 0,0 14.38,-15.57 15.68,-21.69 1.16,-5.43 2.71,-14.39 2.58,-19 a 3.19,3.19 0 0 0 -0.89,-2 c -1.51,-1.63 -1.51,-2.93 -2.48,-4.72 -0.75,-1.4 -1.58,-1.92 -1.34,-2.24 a 1.81,1.81 0 0 1 2.45,-0.18 9.56,9.56 0 0 1 1.85,1.78 10.26,10.26 0 0 0 -0.85,-5.26 c -1.67,-3.78 -1.26,-5.7 3.83,-4.36 3.2,0.85 5.2,3.51 5.68,11.18 a 75.86,75.86 0 0 1 0.06,9.59 c -0.56,5.91 -0.91,12.07 -1.64,17 a 25.68,25.68 0 0 1 -1.75,6.27 z" />
+              <path
+                  inkscape:connector-curvature="0"
+                  id="path72"
+                  style="fill:#ba68c8"
+                  d="M 409.32,210.26 422,195.76 c 0,0 -1.51,3.53 1.79,8.68 3.3,5.15 5.26,4.25 5.26,4.25 0,0 -7.49,10.93 -9.49,14.59 -2,3.66 -4.09,6.75 -4.09,6.75 a 2.41,2.41 0 0 1 -2.37,1.29 c -1.86,0 -6.79,-8.26 -3.78,-21.06 z" />
+              <path
+                  inkscape:connector-curvature="0"
+                  id="path74"
+                  style="opacity:0.3"
+                  d="M 409.32,210.26 422,195.76 c 0,0 -1.51,3.53 1.79,8.68 3.3,5.15 5.26,4.25 5.26,4.25 0,0 -7.49,10.93 -9.49,14.59 -2,3.66 -4.09,6.75 -4.09,6.75 a 2.41,2.41 0 0 1 -2.37,1.29 c -1.86,0 -6.79,-8.26 -3.78,-21.06 z" />
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div class="aboutme-text">
+      <p>
+        Soy un trabajador apasionado con amplia experiencia y grandes conocimientos informáticos, servidores Linux y Cloud computing.
+      </p>
+      <p>
+        En 2015 terminé mi formación Universitaria y recientemente completé un curso de DESARROLLO WEB-Js/NODE Js FULL STACK del Ministerio de Educación del Gobierno de la Ciudad de Buenos Aires (Argentina).
+      </p>
+      <p>
+        Descubrí mi amor por el desarrollo web, quiero seguir aprendiendo para crecer como profesional.
+      </p>
+      <p>
+        Gracias a mi trayectoria laboral he adquirido buena capacidad para analizar y resolver problemas. Me gusta el trabajo en equipo, ya que puedo aprender y enseñar.
+      </p>      
     </div>
   </section>
-
+  
   <!-- SECTION: skills -->
+  <div class="myViewPort" id="skills"></div>
   <section class="skills">
     <div class="perfil">
+
+      <svg
+        viewBox="0 0 500 500"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="100%"
+        id="blobSvg"
+      >
+        <path fill="transparent" stroke="green">
+          <animate
+            attributeName="d"
+            dur="5000ms"
+            repeatCount="indefinite"
+    
+            values="M420,348.5Q364,447,253,442Q142,437,105.5,343.5Q69,250,98.5,144.5Q128,39,237,62Q346,85,411,167.5Q476,250,420,348.5Z;
+            
+            M374.5,319.5Q330,389,229.5,424.5Q129,460,106,355Q83,250,115,160.5Q147,71,250,71Q353,71,386,160.5Q419,250,374.5,319.5Z;
+            
+            M392,331Q344,412,237.5,434Q131,456,83,353Q35,250,104.5,184Q174,118,261,99Q348,80,394,165Q440,250,392,331Z;
+    
+            M407,331Q343,412,256.5,400.5Q170,389,112,319.5Q54,250,109.5,176.5Q165,103,256.5,91.5Q348,80,409.5,165Q471,250,407,331Z;
+            
+            M420,348.5Q364,447,253,442Q142,437,105.5,343.5Q69,250,98.5,144.5Q128,39,237,62Q346,85,411,167.5Q476,250,420,348.5Z"
+          >
+          </animate>
+        </path>
+      </svg>
+      
+
     </div>
   </section>
 
   <!-- SECTION: hobbies -->
+  <div class="myViewPort" id="hobbies"></div>
   <section class="hobbies">
     <div class="perfil">
     </div>
   </section>
 
   <!-- SECTION: academic -->
+  <div class="myViewPort" id="academic"></div>
   <section class="academic">
     <div class="perfil">
     </div>
   </section>
 
   <!-- SECTION: projects -->
+  <div class="myViewPort" id="projects"></div>
   <section class="projects">
     <div class="perfil">
     </div>

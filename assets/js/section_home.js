@@ -1,3 +1,6 @@
+/**
+ * crea estrellas en el index
+ */
 const section_home = document.getElementById('home');
 const home_container = section_home.getElementsByClassName('home-container');
 const home_stars = section_home.getElementsByClassName('stars');
