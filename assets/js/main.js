@@ -58,7 +58,7 @@ const changeNav = (hLink) => {
 const viewPortChange = () => {
   let returnColor = 0;
   for (let i = 1; i < myViewPortSection.length; i++) {
-    if ( myViewPortSection[i].getBoundingClientRect().top < (viewPortHeight / 4) ) returnColor = i;
+    if ( myViewPortSection[i].getBoundingClientRect().top < (viewPortHeight / 3) ) returnColor = i;
   }
   return returnColor;
 }
