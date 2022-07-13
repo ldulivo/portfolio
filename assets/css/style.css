@@ -40,6 +40,10 @@ a, a:active, a:link, a:visited {
   color: var(--text-primary);
 }
 
+button {
+  outline: none;
+}
+
 #aboutMy {
   background-color: transparent;
 }
@@ -183,10 +187,43 @@ a, a:active, a:link, a:visited {
   z-index: 199;
   top: calc(100vh - 125px);
   border: none;
+  color: var(--text-primary);
 }
 
 .contact-me:active {
   box-shadow: inset 2px 2px 8px #333;
+}
+
+.contact-me-flying {
+  position: fixed;
+  animation: transform-contact-me-flying 3s forwards;
+}
+
+.contact-me-flying svg {
+  fill: var(--gray);
+}
+
+@keyframes transform-contact-me-flying {
+  0% {
+    position: fixed;
+    top: 0;
+    right: 17px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    padding: 0;
+    background: transparent;
+  }
+  100% {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 17px;
+    bottom: 75px;
+    border-radius: 50%;
+    padding: 0;
+    background: transparent;
+  }
 }
 
 /*
@@ -311,7 +348,7 @@ section {
 }
 
 .home .card .title h1 {
-  color: #1b556e;
+  color: var(--dark);
   font-size: 1em;
 }
 
