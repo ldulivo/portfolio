@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#333" />
   <title>Leonardo D'Ulivo</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/chatbot.css">
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 </head>
 
@@ -21,31 +22,31 @@
 
       <ul id="menu_nav">
         <li class="list" data-color="#ffa801" data-link="#aboutMy">
-          <button href="#aboutMy">
+          <button>
             <span class="icon"></span>
             <span class="title">Sobre mi</span>
           </button>
         </li>
         <li class="list" data-color="#f53b57" data-link="#skills">
-          <button href="#">
+          <button>
             <span class="icon"></span>
             <span class="title">Skills</span>
           </button>
         </li>
         <li class="list" data-color="#3c40c6" data-link="#hobbies">
-          <button href="#">
+          <button>
             <span class="icon"></span>
             <span class="title">Hobbies</span>
           </button>
         </li>
         <li class="list" data-color="#05c46b" data-link="#academic">
-          <button href="#">
+          <button>
             <span class="icon"></span>
             <span class="title">Formación</span>
           </button>
         </li>
         <li class="list" data-color="#0fbcf9" data-link="#projects">
-          <button href="#">
+          <button>
             <span class="icon"></span>
             <span class="title">Proyectos</span>
           </button>
@@ -59,7 +60,7 @@
 
   </nav>
 
-  <button href="#" class="contact-me" id="contact_me">
+  <button class="contact-me" id="contact_me" data-link="contactMeForm">
     Contáctame
   </button>
 
@@ -273,6 +274,7 @@
   <div class="myViewPort" id="projects"></div>
   <section class="projects">
     <div class="perfil">
+      <h2>Proyectos</h2>
     </div>
   </section>
 
@@ -292,20 +294,42 @@
             dur="5000ms"
             repeatCount="indefinite"
     
-            values="M420,348.5Q364,447,253,442Q142,437,105.5,343.5Q69,250,98.5,144.5Q128,39,237,62Q346,85,411,167.5Q476,250,420,348.5Z;
+            values="M446.5,347.5Q405,445,302,460Q199,475,117.5,414Q36,353,38,251Q40,149,119.5,87.5Q199,26,299.5,44Q400,62,444,156Q488,250,446.5,347.5Z;
+
+            M443.5,338Q390,426,296,443.5Q202,461,128,402.5Q54,344,67.5,256.5Q81,169,139,94Q197,19,283,60Q369,101,433,175.5Q497,250,443.5,338Z;
+
+            M429,328Q374,406,287.5,436Q201,466,143.5,397.5Q86,329,78.5,246.5Q71,164,133.5,88Q196,12,294.5,41.5Q393,71,438.5,160.5Q484,250,429,328Z;
+
+            M423.5,340.5Q394,431,301.5,430Q209,429,119,392.5Q29,356,50.5,260Q72,164,138.5,107.5Q205,51,294.5,66Q384,81,418.5,165.5Q453,250,423.5,340.5Z;
             
-            M374.5,319.5Q330,389,229.5,424.5Q129,460,106,355Q83,250,115,160.5Q147,71,250,71Q353,71,386,160.5Q419,250,374.5,319.5Z;
-            
-            M392,331Q344,412,237.5,434Q131,456,83,353Q35,250,104.5,184Q174,118,261,99Q348,80,394,165Q440,250,392,331Z;
-    
-            M407,331Q343,412,256.5,400.5Q170,389,112,319.5Q54,250,109.5,176.5Q165,103,256.5,91.5Q348,80,409.5,165Q471,250,407,331Z;
-            
-            M420,348.5Q364,447,253,442Q142,437,105.5,343.5Q69,250,98.5,144.5Q128,39,237,62Q346,85,411,167.5Q476,250,420,348.5Z"
+            M446.5,347.5Q405,445,302,460Q199,475,117.5,414Q36,353,38,251Q40,149,119.5,87.5Q199,26,299.5,44Q400,62,444,156Q488,250,446.5,347.5Z"
           >
           </animate>
         </path>
       </svg>
-    <div class="perfil">
+    <div class="contactForm">
+      <form action="">
+        <h2>Contáctame</h2>
+        <div class="inputBox">
+          <input value="" type="text" name="" id="" required="required" placeholder=" ">
+          <span>Nombre</span>
+        </div>
+        <div class="inputBox">
+          <input value="" type="email" name="" id="" required="required" placeholder=" ">
+          <span>E-mail</span>
+        </div>
+        <div class="inputBox">
+          <input value="" type="text" name="" id="" required="required" placeholder=" ">
+          <span>Asunto</span>
+        </div>
+        <div class="inputBox">
+          <textarea name="" id="" cols="30" rows="10" required="required" placeholder=" "></textarea>
+          <span>Mensaje</span>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send">
+        </div>
+      </form>
     </div>
   </section>
 
@@ -314,6 +338,7 @@
 
 
   <!-- SCRIPTS -->
+  <!-- <script src="./assets/js/chatbot.js"></script> -->
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/section_home.js"></script>
 </body>

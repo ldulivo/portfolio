@@ -44,7 +44,7 @@ const printMenu = () => {
 const printRespuesta = (index, id, ulID, ulItem) => {
   if (ulItem !== menu.length-1) {
     const p = document.createElement('p');
-    p.innerText = respuestas[index];
+    p.innerText = respuestas[ulItem];
     
     div.appendChild(p);
   
