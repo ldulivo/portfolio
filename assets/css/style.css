@@ -33,6 +33,7 @@ body {
   background: var(--background);
   transition: var(--transition-bg);
   padding: 0 16px;
+  scroll-behavior: smooth;
 }
 
 a, a:active, a:link, a:visited {
@@ -194,16 +195,12 @@ button {
   box-shadow: inset 2px 2px 8px #333;
 }
 
-.contact-me-flying {
+/* .contact-me-flying {
   position: fixed;
   animation: transform-contact-me-flying 3s forwards;
-}
+} */
 
-.contact-me-flying svg {
-  fill: var(--gray);
-}
-
-@keyframes transform-contact-me-flying {
+/* @keyframes transform-contact-me-flying {
   0% {
     position: fixed;
     top: 0;
@@ -223,6 +220,72 @@ button {
     border-radius: 50%;
     padding: 0;
     background: transparent;
+    box-shadow: none;
+  }
+} */
+
+.contact-me-flying span {
+  cursor: pointer;
+  position: fixed;
+  bottom: 92px;
+  right: 17px;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  background-image: url(../img/bot01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(4deg) translate(0px, 0px);
+  animation: transform-contact-me-flying-span 5s linear infinite;
+}
+
+@keyframes transform-contact-me-flying-span {
+  0%, 100% {
+    transform: rotate(0deg) translate(0px, 0px);
+    background-image: url(../img/bot01.png);
+  }
+  50% {
+    transform: rotate(0deg) translate(0px, 3px);
+    background-image: url(../img/bot01.png);
+  }
+  51% {
+    transform: rotate(0deg) translate(0px, 3px);
+    background-image: url(../img/bot02.png);
+  }
+  85% {
+    transform: rotate(0deg) translate(0px, 3px);
+    background-image: url(../img/bot02.png);
+  }
+}
+
+.contact-me-flying span::before {
+  content: '';
+  position: absolute;
+  width: calc(220px / 11);
+  height: 32px;
+  bottom: -28px;
+  left: 21px;
+  background-image: url(../img/fire_rocket_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: transform-contact-me-flying-span-pseudo .5s linear infinite;
+}
+
+@keyframes transform-contact-me-flying-span-pseudo {
+  0%, 100% {
+    background-image: url(../img/fire_rocket_01.png);
+  }
+  20% {
+    background-image: url(../img/fire_rocket_02.png);
+  }
+  40% {
+    background-image: url(../img/fire_rocket_03.png);
+  }
+  60% {
+    background-image: url(../img/fire_rocket_04.png);
+  }
+  80% {
+    background-image: url(../img/fire_rocket_05.png);
   }
 }
 
@@ -406,7 +469,8 @@ Utils
   width: 75px;
   height: 75px;
   border-radius: 25% 50%;
-  background-color: #333;
+  /* background-color: #333; */
+  background-color: rgba(255, 255, 255, 0.347);
   position: absolute;
   z-index: -1;
 }
@@ -414,6 +478,7 @@ Utils
 .perfil h2 {
   margin-left: 25px;
   margin-top: 20px;
+  text-shadow: 1px 1px 3px #3333337d;
 }
 
 .card-container {
@@ -465,6 +530,7 @@ Utils
   color: var(--text-primary);
   margin-left: 25px;
   margin-top: 20px;
+  text-shadow: 1px 1px 3px #3333337d;
 }
 
 .skills .skills-soft .card-container {
@@ -496,6 +562,24 @@ Utils
   }
 }
 
+/*
+  contactMeForm
+*/
+.contactMeForm {
+  margin: 32px 16px;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.contactMeForm svg path {
+  stroke: var(--text-primary);
+  fill: var(--text-primary);
+}
+
+.contactMeForm .perfil::before {
+  content: none;
+}
 
 /*
   Media queries
